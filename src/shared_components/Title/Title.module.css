@@ -1,0 +1,39 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 750px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 130%;
+  text-align: center;
+  color: #151411;
+  margin-bottom: 30px;
+}
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  text-align: center;
+  color: #afadb5;
+}
+@media (max-width: 575.98px) {
+  .parent{
+    width: 327px;
+    padding: 50px 0;
+  }
+  .title{
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .text{
+    font-size: 14px;
+  }
+}

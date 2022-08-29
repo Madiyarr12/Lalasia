@@ -1,0 +1,13 @@
+.parent {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+}
+.brandName {
+  height: 19px;
+  width: 76px;
+}

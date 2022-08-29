@@ -1,0 +1,45 @@
+.ourTeam {
+  margin-top: 180px;
+  display: flex;
+  align-items: center;
+  gap: 186px;
+}
+.ourTeam_left {
+  width: 548px;
+  height: 151px;
+}
+.ourTeam_right {
+  width: 505px;
+  height: 96px;
+}
+.team {
+  margin-top: 50px;
+  margin-bottom: 180px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 29px;
+}
+@media (max-width: 575.98px) {
+  .ourTeam {
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .ourTeam_left {
+    width: 250px;
+    height: 88px;
+  }
+  .ourTeam_right {
+    width: 327px;
+    height: 75px;
+  }
+  .team {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 29px;
+  }
+}

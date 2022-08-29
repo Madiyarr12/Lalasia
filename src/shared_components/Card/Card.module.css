@@ -1,0 +1,77 @@
+.parent {
+  margin-top: 50px;
+}
+.card {
+  width: 394px;
+  height: 544px;
+}
+.card:hover{
+  cursor: pointer;
+}
+.card img {
+  width: 394px;
+  height: 360px;
+}
+.card h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: #afadb5;
+  margin-top: 26px;
+}
+.card h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #151411;
+  margin-top: 14px;
+}
+.card p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: #afadb5;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+.price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #151411;
+}
+@media (max-width: 575.98px) {
+  .card {
+    width: 220px;
+    height: 400px;
+  }
+  .card .img {
+    width: 220px;
+    height: 194px;
+  }
+  .card h5 {
+    font-size: 12px;
+    margin-top: 14px;
+  }
+  .card h3 {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  .card p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    color: #afadb5;
+    margin-top: 4px;
+    margin-bottom: 12px;
+  }
+  .price {
+    font-size: 14px;
+  }
+}

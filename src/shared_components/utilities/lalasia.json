@@ -1,0 +1,86 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "productCard": [
+    {
+      "id": 1,
+      "category": "Chair",
+      "title": "White Aesthetic Chair",
+      "description": "Combination of wood and wool",
+      "price": 63.47,
+      "imageUrl": "https://i.postimg.cc/KzZhWFw9/Rectangle-23.png"
+    },
+    {
+      "category": "Cupboard",
+      "title": "Wooden Cupboard 3 Row",
+      "description": "Combination of wood and wool",
+      "price": 50,
+      "imageUrl": "https://i.postimg.cc/RV0Jbt2v/Rectangle-23.png",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "category": "Chair",
+      "title": "Minimalist Lounge Chair",
+      "description": "Combination of wood and wool",
+      "price": 14.74,
+      "imageUrl": "https://i.postimg.cc/NMzvsWGJ/Rectangle-23-2.png"
+    },
+    {
+      "category": "Table",
+      "title": "Working Desk Setup",
+      "description": "Combination of wood and wool",
+      "price": 47.9,
+      "imageUrl": "https://i.postimg.cc/NjJ373mg/Rectangle-23-3.png",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "category": "Cupboard",
+      "title": "Minimalist White Cuppboard",
+      "description": "Combination of wood and wool",
+      "price": 40.73,
+      "imageUrl": "https://i.postimg.cc/1XM8WRyC/Rectangle-23-4.png"
+    },
+    {
+      "id": 6,
+      "category": "Table",
+      "title": "Wooden Dining Table",
+      "description": "Combination of wood and wool",
+      "price": 16.5,
+      "imageUrl": "https://i.postimg.cc/XYSR2fDP/Rectangle-23-5.png"
+    },
+    {
+      "id": 7,
+      "category": "Decoration",
+      "title": "White Minimalist Vase",
+      "description": "Combination of wood and wool",
+      "price": 58.39,
+      "imageUrl": "https://i.postimg.cc/5yjXRdjf/Rectangle-23-6.png"
+    },
+    {
+      "category": "Decoration",
+      "title": "Plant With Clay Stand",
+      "description": "Combination of wood and wool",
+      "price": 50,
+      "imageUrl": "https://i.postimg.cc/5yjXRdjf/Rectangle-23-6.png",
+      "id": 8
+    },
+    {
+      "category": "Chair",
+      "title": "White Aesthetic Chair",
+      "description": "software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "price": 50,
+      "imageUrl": "https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+      "id": 10
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

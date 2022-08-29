@@ -1,0 +1,130 @@
+.parent {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 1240px;
+  margin: 180px auto;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: #ffb23f;
+}
+.left h2 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  width: 427px;
+  height: 114px;
+  color: #151411;
+}
+.right p {
+  width: 505px;
+  height: 96px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: #afadb5;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-inline: auto;
+}
+.item {
+  width: 394px;
+  height: 285px;
+  background: #ffffff;
+  box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+}
+.item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 40px;
+}
+.item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #151411;
+  margin-bottom: 20px;
+}
+.item p {
+  width: 346px;
+  height: 96px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: #afadb5;
+}
+@media (max-width: 575.98px) {
+  .parent {
+    width: 327px;
+    margin: 100px 0;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left p {
+    height: 18px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #ffb23f;
+  }
+  .left h2 {
+    width: 327px;
+    height: 62px;
+    margin-left: 0;
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  .right p {
+    width: 327px;
+    height: 75px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .bottom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 46px;
+    margin-inline: auto;
+  }
+  .item {
+    width: 327px;
+    height: 194px;
+    background: #ffffff;
+    box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+  }
+  .item img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 20px;
+  }
+  .item h3 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .item p {
+    width: 295px;
+    height: 96px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    color: #afadb5;
+  }
+}
