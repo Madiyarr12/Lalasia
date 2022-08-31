@@ -8,6 +8,7 @@ import { HiOutlineFilter } from 'react-icons/hi'
 import axios from 'axios'
 import { BsFilter } from 'react-icons/bs'
 import { useNavigate } from 'react-router-dom'
+import { SpinnerCircular } from 'spinners-react'
 function Product() {
   let navigate = useNavigate()
   const [allproduct, setAllProduct] = useState([])
@@ -26,11 +27,11 @@ function Product() {
         // always executed
       })
   }, [])
-
   function readMore(cardId) {
     navigate(`/productDetail/${cardId}`)
     window.location.reload()
   }
+
   return (
     <>
       <Layout>
@@ -72,11 +73,21 @@ to see our old products please enter the name of the item"
             </div>
           </div>
           {/* All product */}
+
           <div className="grid_container animate__animated animate__fadeInLeft ">
-            {
-              (allproduct != null,
-              allproduct.map((card) => <Card card={card} />))
-            }
+            {allproduct != null ? (
+              allproduct.map((card) => <Card card={card} />)
+            ) : (
+              <div className="flex justify-center my-44">
+                <SpinnerCircular
+                  size={150}
+                  thickness={100}
+                  speed={98}
+                  color="rgba(57, 150, 172, 1)"
+                  secondaryColor="rgba(0, 0, 0, 0)"
+                />
+              </div>
+            )}
           </div>
         </section>
 
@@ -89,7 +100,7 @@ to see our old products please enter the name of the item"
 
           <Carousel />
           {/* Search product */}
-          <div className='product_searchDiv'>
+          <div className="product_searchDiv">
             <img
               src="https://i.postimg.cc/Kj8ykRjB/search-normal.png"
               alt="search-icon"
@@ -133,5 +144,4 @@ to see our old products please enter the name of the item"
     </>
   )
 }
-// key={card.id} onClick={readMore}
 export default Product

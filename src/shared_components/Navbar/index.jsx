@@ -10,9 +10,11 @@ import { FiLogOut } from 'react-icons/fi'
 import 'animate.css'
 import { Fade } from 'react-reveal'
 import { AuthContext } from '../utilities/AuthProvider'
+import { ProductContext } from '../utilities/productContext'
 function Navbar() {
   let navigate = useNavigate()
   const { currentUser, logOut } = useContext(AuthContext)
+  const { productCart } = useContext(ProductContext)
   const [open, setOpen] = useState(false)
   function openMenu() {
     open ? setOpen(false) : setOpen(true)
@@ -36,6 +38,7 @@ function Navbar() {
         <div className={styles.right}>
           <Link to={'/cart'}>
             <img src={bag} alt="bag-icon" />
+            {productCart.length > 0 ? <span>{productCart.length}</span> : null}
           </Link>
           {currentUser != null ? (
             <FiLogOut onClick={loGout} className="font-medium" />
@@ -74,9 +77,10 @@ function Navbar() {
               <Link to="/article">Article</Link>
               <Link to="/about">About Us</Link>
             </div>
-            <div className="flex items-start">
+            {/* <div className="flex items-start">
               <Link to={'/cart'}>
                 <img src={bag} alt="bag-icon" />
+                {productCart.length > 0 ? <span>{productCart.length}</span> : null}
               </Link>
               {currentUser != null ? (
                 <FiLogOut className="font-medium" />
@@ -85,7 +89,7 @@ function Navbar() {
                   <img src={user} alt="user-icon" />
                 </Link>
               )}
-            </div>
+            </div> */}
           </div>
         </Fade>
       </nav>

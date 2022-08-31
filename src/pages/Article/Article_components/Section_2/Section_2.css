@@ -49,45 +49,11 @@
   color: #151411;
 }
 @media (max-width: 575.98px) {
-  .article_header h5 {
-    font-style: 14px;
-    height: 18px;
-  }
-  .article_header h2 {
-    font-size: 24px;
-    margin: 8px 0 30px 0;
+  .article_header {
+    display: none;
   }
   .article_cards {
-   
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 18px;
-    margin-bottom: 100px;
-  }
-  .card-article {
-    width: 605px;
-    height: 340px;
-    margin-bottom: 180px;
-  }
-  .card-article_img {
-    width: 327px;
-    height: 180px;
-  }
-  .card-article p {
-    width: 105px;
-    height: 22px;
-    font-size: 12px;
-  }
-  .card-article_text {
-    width: 327px;
-    height: 44px;
-  }
-  .card-article h3 {
-    font-size: 14px;
-    width: 327px;
-    height: 40px;
-    margin: 10px 0 14px 0;
+    display: none;
   }
   .user-data {
     width: 260px;

@@ -16,10 +16,23 @@
 }
 .right {
   display: flex;
+  position: relative;
 }
 .right * {
+  margin-inline: 5px;
   width: 40px;
   height: 40px;
+}
+.right span {
+  background-color: red;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -5px;
+  left: 27px;
+  text-align: center;
+  color: #fff;
 }
 /* Mobile Navbar styles */
 .mobileNav {

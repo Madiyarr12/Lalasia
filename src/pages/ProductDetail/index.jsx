@@ -4,10 +4,10 @@ import { useNavigate, useParams } from 'react-router-dom'
 import './Section_1.css'
 import axios from 'axios'
 import Card from './../../shared_components/Card/index'
-import { ProductContext } from '../../shared_components/utilities/productContext'
+import { AuthContext } from '../../shared_components/utilities/AuthProvider'
 function ProductDetail() {
-  const { productCart, setProductCart } = useContext(ProductContext)
   let navigate = useNavigate()
+  const { admin } = useContext(AuthContext)
   const [aboutProduct, setAboutProduct] = useState([])
   const [related, setRelated] = useState([])
   let params = useParams()
@@ -59,12 +59,7 @@ function ProductDetail() {
   function Update() {
     navigate(`/productUpdate/${aboutProduct.id}`)
   }
-  function addToCart() {
-    let cartList = [...productCart]
-    cartList.push(aboutProduct)
-    setProductCart(cartList)
-    alert("bosildi")
-  }
+
   return (
     <Layout>
       <section className="product_deatil-one">
@@ -89,24 +84,20 @@ function ProductDetail() {
           <h2 className="header-two tt-color-1">${aboutProduct.price}</h2>
           <div className="buttons">
             <button className="btn-buyNow header-five">Buy Now</button>
-            <button
-              onClick={addToCart}
-              className="header-five tt-color-1 btn-add"
-            >
-              Add to Chart
-            </button>
           </div>
-          <div className="buttons">
-            <button
-              onClick={(e) => productDelete(aboutProduct.id)}
-              className="deleteBtn header-five"
-            >
-              Delete
-            </button>
-            <button onClick={Update} className="updatebtn header-five">
-              Update
-            </button>
-          </div>
+          {admin ? (
+            <div className="buttons">
+              <button
+                onClick={(e) => productDelete(aboutProduct.id)}
+                className="deleteBtn header-five"
+              >
+                Delete
+              </button>
+              <button onClick={Update} className="updatebtn header-five">
+                Update
+              </button>
+            </div>
+          ) : null}
         </div>
       </section>
       <section className="related_products">

@@ -5,7 +5,7 @@
   width: 394px;
   height: 544px;
 }
-.card:hover{
+.card:hover {
   cursor: pointer;
 }
 .card img {
@@ -44,6 +44,12 @@
   font-size: 24px;
   line-height: 130%;
   color: #151411;
+}
+.lineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 @media (max-width: 575.98px) {
   .card {
