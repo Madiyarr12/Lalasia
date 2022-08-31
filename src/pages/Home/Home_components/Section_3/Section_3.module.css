@@ -37,6 +37,7 @@
 @media (max-width: 575.98px) {
   .parent {
     margin-top: 100px;
+    display: none;
   }
   .text{
     width: 327px;
